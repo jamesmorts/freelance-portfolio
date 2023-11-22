@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EEF4ED;
+    background-image: url('background.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    margin: 0;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+}
+
+.header-content {
+    font-family: 'Roboto';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+    padding: 20px;
+}
+
+.header-section {
+    display: flex;
+    position: sticky;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+.header-content > h1 {
+    display: flex;
+    font-weight: 700;
+    color: #fff;
+    font-size: 60px;
+}
+
+.header-content > p {
+    display: flex;
+    font-weight: 400;
+    color: #8DA9C4;
+    font-size: 28px;
+}
+
+.profilePic {
+    height: 220px;
+    aspect-ratio: 1/1;
+    padding: 15px;
+}
+
+.main-area {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%; /*This shit get rid of the scroll bar*/
+}
+
+.section-content {
+    font-family: 'Roboto';
+    color: #fff;
+    font-weight: 400;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: left;
+    padding: 120px;
+    margin-top: 300px;
+}
+
+.section-content > img {
+    width: 100%;
+    max-width: 700px;
+    margin-right: 100px;
+}
+
+.section-text {
+    display: flex;
+    font-size: 28px;
+    gap: 32px;
+    flex-direction: column;
+    align-items: left;
+}
+
+button {
+    font-family: 'Roboto';
+    font-size: 24px;
+    border-radius: 35px;
+    width: 200px;
+    height: 65px;
+    font-weight: 700;
+    background-color: #8fcfe5;
+    color: #0B2545;
+    transition-duration: 0.4s;
+    border: none;
+}
+
+button:hover {
+    background-color: #0B2545;
+    color: #8fcfe5;
+  }
+
+.contact-button {
+    border-radius: 32px;
+    width: 130px;
+    height: 45px;
+    font-weight: 700;
+    display: flex;
+}
+
+.contact-button {
+    border-radius: 32px;
+    width: 130px;
+    height: 45px;
+    font-weight: 700;
+    display: flex;
+}
+
+.phone {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    margin-left: 32px;
+}
+
+.phone:hover, .socialIcon:hover{
+    scale: 110%;
+    transition-duration: 500ms;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    margin-top: 32px;
+}
+
+.socialIcon {
+    display: flex;
+    max-width: 42px;
+    max-height: 42px;
+    margin-top: 10px;
+}
+
+.socialIcons {
+    display: flex;
+    max-width: 42px;
+    max-height: 42px;
+    margin-top: 10px;
+    gap: 24px;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+}
+
+/*
+deep-green: #002922;
+green: #1f5b50;
+light-green: #caedd4;
+lightest-green: #e4f6e9;
+blue: #8fcfe5;
+light-blue: #e3f3f8;
+orange: #f27c5a;
+cream: #f7ecd3;
+light-cream: #fbf5e9;
+*/
