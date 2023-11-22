@@ -15,6 +15,11 @@ body {
     background-size: cover;
     display: flex;
     margin: 0;
+    width: 100vw;
+    min-width: 100vw;
+    max-width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .page {
@@ -33,14 +38,25 @@ body {
     padding: 20px;
 }
 
-.header-section {
+.header-section-right {
     display: flex;
-    position: sticky;
+    flex-direction: row;
+    justify-content: right;
     width: 100%;
     bottom: 0;
-    position: fixed;
+    padding-right: 0;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    float: right;
+}
+
+.header-section-left {
+    display: flex;
     margin-bottom: 50px;
     margin-left: 50px;
+    position: fixed;
+    bottom: 0;
 }
 
 .header-content > h1 {
@@ -48,6 +64,7 @@ body {
     font-weight: 700;
     color: #fff;
     font-size: 60px;
+    padding-right: 150px;
 }
 
 .header-content > p {
@@ -55,6 +72,7 @@ body {
     font-weight: 400;
     color: #8DA9C4;
     font-size: 28px;
+    padding-right: 150px;
 }
 
 .profilePic {
@@ -77,8 +95,9 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: left;
-    padding: 120px;
-    margin-top: 300px;
+    padding-right: 60px;
+    padding-left: 60px;
+    margin-top: 10%;
 }
 
 .section-content > img {
@@ -92,7 +111,9 @@ body {
     font-size: 28px;
     gap: 32px;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: left;
+    padding-right: 20px
 }
 
 button[type=submit] {
@@ -186,28 +207,12 @@ form {
     justify-content: center;
 }
 
-.enquireFarsiight {
+.enquireText {
     display: flex;
     flex-direction: column;
     text-align: right;
-    padding: 0;
-    font-weight: 400;
     color: #8DA9C4;
     font-size: 16px;
     font-family: 'Roboto';
-    position: fixed;
-    bottom: 110px;
-    right: 320px;
-}
-
-svg {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    float:left
-}
-
-svg:hover {
-    scale: 105%;
-    transition-duration: 500ms;
+    padding-right: 24px;
 }
