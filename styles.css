@@ -95,12 +95,12 @@ body {
     align-items: left;
 }
 
-button {
+button[type=submit] {
     font-family: 'Roboto';
     font-size: 24px;
     border-radius: 35px;
-    width: 200px;
-    height: 65px;
+    width: 150px;
+    height: 45px;
     font-weight: 700;
     background-color: #8fcfe5;
     color: #0B2545;
@@ -108,17 +108,14 @@ button {
     border: none;
 }
 
-button:hover {
+button[type=submit]:hover {
     background-color: #0B2545;
     color: #8fcfe5;
-  }
+}
 
-.contact-button {
-    border-radius: 32px;
-    width: 130px;
-    height: 45px;
-    font-weight: 700;
-    display: flex;
+button[type=submit]:active {
+    scale: 90%;
+    transition-duration: 200ms;
 }
 
 .contact-button {
@@ -131,10 +128,10 @@ button:hover {
 
 .phone {
     display: flex;
-    width: 50px;
-    height: 50px;
-    margin-top: 5px;
-    margin-left: 32px;
+    width: 42px;
+    height: 42px;
+    margin-top: 10px;
+    margin-left: -5px;
 }
 
 .phone:hover, .socialIcon:hover{
@@ -168,14 +165,49 @@ button:hover {
     flex-direction: row;
 }
 
-/*
-deep-green: #002922;
-green: #1f5b50;
-light-green: #caedd4;
-lightest-green: #e4f6e9;
-blue: #8fcfe5;
-light-blue: #e3f3f8;
-orange: #f27c5a;
-cream: #f7ecd3;
-light-cream: #fbf5e9;
-*/
+.emailField {
+    border-radius: 32px;
+    width: 330px;
+    height: 45px;
+    margin-right: 10px;
+    border: none;
+    padding-left: 20px;
+}
+    
+input::placeholder {
+    font-size: 1.25rem;
+}
+
+form {
+    padding: 0;
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.enquireFarsiight {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding: 0;
+    font-weight: 400;
+    color: #8DA9C4;
+    font-size: 16px;
+    font-family: 'Roboto';
+    position: fixed;
+    bottom: 110px;
+    right: 320px;
+}
+
+svg {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    float:left
+}
+
+svg:hover {
+    scale: 105%;
+    transition-duration: 500ms;
+}
