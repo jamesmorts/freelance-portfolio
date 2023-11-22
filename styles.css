@@ -37,7 +37,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: right;
-    padding-right: 0;
+    width: 100%;
     padding-top: 50px;
     position: fixed;
     bottom: 0;
@@ -46,10 +46,12 @@ body {
 
 .header-section-left {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     margin-left: 50px;
-    position: fixed;
-    bottom: 0;
-    padding-bottom: 50px;
+    align-items: flex-end;
+    width: 100%;
+    margin-top: 20%;
 }
 
 .header-content > h1 {
@@ -57,7 +59,6 @@ body {
     font-weight: 700;
     color: #fff;
     font-size: 60px;
-    padding-right: 150px;
 }
 
 .header-content > p {
@@ -65,7 +66,6 @@ body {
     font-weight: 400;
     color: #8DA9C4;
     font-size: 28px;
-    padding-right: 150px;
 }
 
 .profilePic {
@@ -74,23 +74,12 @@ body {
     padding: 15px;
 }
 
-.main-area {
-    display: flex;
-    flex-direction: column;
-    max-width: 100%; /*This shit get rid of the scroll bar*/
-}
-
 .section-content {
     font-family: 'Roboto';
     color: #fff;
     font-weight: 400;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: left;
-    padding-right: 60px;
     padding-left: 60px;
-    padding-top: 25vmax;
+    padding-top: 24vmax;
 }
 
 .section-content > img {
@@ -106,7 +95,6 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: left;
-    padding-right: 20px
 }
 
 button[type=submit] {
