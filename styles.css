@@ -193,13 +193,13 @@ form {
     display: flex;
     flex-direction: column;
     width: 100%;
+    scale: 0.75;
     }
 
     .rightContent {
         margin-top: 0;
         min-width: 50vw;
         width: 100%;
-        position: fixed;
         bottom: 0;
         display: flex;
         flex-direction: column;
@@ -271,5 +271,15 @@ form {
 
     button {
         margin: auto;
+    }
+
+    .phone {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 42px;
+        height: 42px;
+        margin-top: 10px;
+        margin-right: 10px;
     }
 }
