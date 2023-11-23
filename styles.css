@@ -294,12 +294,12 @@ form {
 
     .info {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: center;
         margin: 0 auto 0 auto;
         top: 0;
         width: 100%;
-        text-align: center;
-        scale: 0.9;
+        height: 25vh;
         padding-top: 5%;
     }
 
@@ -322,26 +322,31 @@ form {
     }
 
     .profilePic {
-        margin: 0 auto 10% auto;
-        scale: 1.25;
+        margin: 0 0 10% 5%;
+        scale: 1;
+        max-width: 100px;
+        max-height: 100px;
     }
 
     .infoText {
-        text-align: center;
-        scale: 0.9;
+        text-align: left;
+        margin-top: 5%;
+        min-width: 50%;
     }
     .infoText > h1 {
-        text-align: center;
-        font-size: 3rem;
+        text-align: left;
+        padding-left: 10%;
+        font-size: 1.5rem;
     }
     .infoText > p {
-        text-align: center;
-        font-size: 1.5rem;
+        text-align: left;
+        padding-left: 10%;
+        font-size: 1.2rem;
     }
 
     .icons {
         margin: -5000px;
-        scale: 0.9;
+        scale: 0.001;
     }
 
     form {
