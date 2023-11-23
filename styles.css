@@ -37,7 +37,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: right;
-    width: 100%;
+
     padding-top: 50px;
     position: fixed;
     bottom: 0;
@@ -47,29 +47,30 @@ body {
 .header-section-left {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
     margin-left: 50px;
-    align-items: flex-end;
+    position: fixed;
+    bottom: 0;
     width: 100%;
-    margin-top: 20%;
+    margin-bottom: 50px;
 }
 
 .header-content > h1 {
     display: flex;
     font-weight: 700;
     color: #fff;
-    font-size: 60px;
+    font-size: 3rem;
 }
 
 .header-content > p {
     display: flex;
     font-weight: 400;
     color: #8DA9C4;
-    font-size: 28px;
+    font-size: 1.5rem;
 }
 
 .profilePic {
-    height: 220px;
+    max-height: 150px;
     aspect-ratio: 1/1;
     padding: 15px;
 }
@@ -79,7 +80,7 @@ body {
     color: #fff;
     font-weight: 400;
     padding-left: 60px;
-    padding-top: 24vmax;
+    padding-top: 300px;
 }
 
 .section-content > img {
@@ -197,3 +198,28 @@ form {
     font-family: 'Roboto';
     padding-right: 24px;
 }
+
+@media only screen and (max-width: 600px) {
+    .header-section-left {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: 50px;
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    .header-content {
+        font-family: 'Roboto';
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        max-width: 100%;
+        padding: 20px;
+    }
+    
+    .section-all {
+        display: flex;
+        flex-direction: column;
+    }
+  }
