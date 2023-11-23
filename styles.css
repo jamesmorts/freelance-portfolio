@@ -193,11 +193,12 @@ form {
     display: flex;
     flex-direction: column;
     width: 100%;
-    scale: 0.75;
+    scale: 0.9;
     }
 
     .rightContent {
         margin-top: 0;
+        margin-bottom: -2vh;
         min-width: 50vw;
         width: 100%;
         bottom: 0;
@@ -226,8 +227,6 @@ form {
         display: flex;
         flex-direction: column;
         margin: 0 auto 0 auto;
-        padding: 10%;
-        padding-top: 10%;
         position: fixed;
         top: 0;
         width: 100%;
